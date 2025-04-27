@@ -1,0 +1,5 @@
+tb/log.txt
+tb/simv.daidir
+tb/csrc
+*.vcd
+tb/simv

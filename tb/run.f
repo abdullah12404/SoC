@@ -1,0 +1,6 @@
++UVM_TESTNAME=test_Data_Transmitted_equals_data_in_transmit_FIFO
+//+UVM_TESTNAME=Data_Received_equals_data_in
+//+UVM_TESTNAME=Data_Transmitted_equals_data_in_transmit_FIFO_BD_115200
+//+UVM_TESTNAME=test_Data_Received_equals_data_in_FIFO_BD_4800
+//+UVM_TESTNAME=test_BAD_PARITY_BD_115200_EVEN_1
++UVM_TIMEOUT=1000000000ns
