@@ -9,9 +9,9 @@ defines.sv
 ../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv          //UART pkg should be there
 ../../Peripherals/Wishbone_x_UART/uart/sv/uart_if.sv           //This is UART interface
 
-+incdir+../wishbone/sv
-../wishbone/sv/wishbone_pkg.sv 
-../wishbone/sv/wishbone_if.sv 
++incdir+../wishbone_bfm/sv
+../wishbone_bfm/sv/wishbone_pkg.sv 
+../wishbone_bfm/sv/wishbone_if.sv 
 
 +incdir+../clock_and_reset/sv
 ../clock_and_reset/sv/clock_and_reset_pkg.sv 
@@ -19,6 +19,10 @@ defines.sv
 
 +incdir+../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv
 ../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_module_pkg.sv 
+
++incdir+../soc_module/sv
+../soc_module/sv/soc_module_pkg.sv 
+
 
 
 

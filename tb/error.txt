@@ -1,0 +1,714 @@
+                         Chronologic VCS (TM)
+       Version W-2024.09-SP1_Full64 -- Mon Apr 28 18:38:01 2025
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[NTB_OPT_UNKWN] Unknown -ntb_opts option used
+  Unknown option '-ntb_opts -uvm' is ignored.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'timescale+1ns/100ps' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Parsing design file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_version_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/snps_macros.svp'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_message_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_phase_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_object_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_printer_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_sequence_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_callback_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_reg_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_deprecated_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/directc/uvm_directc.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/directc/uvm_seed.vh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/directc/uvm_directc.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_hdl.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_regex.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_version.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_object_globals.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_misc.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_object.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_pool.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_queue.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_factory.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_registry.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_spell_chkr.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_resource.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/deprecated/uvm_resource_converter.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_resource_specializations.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_resource_db.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_config_db.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_printer.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_comparer.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_packer.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_recorder.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_event_callback.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_event.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_barrier.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_callback.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_callback.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_report_catcher.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_report_server.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_report_handler.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_report_object.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_transaction.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_phase.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_domain.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_bottomup_phase.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_topdown_phase.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_task_phase.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_common_phases.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_runtime_phases.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_component.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_root.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_component.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_objection.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_heartbeat.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_globals.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_cmdline_processor.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_base.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/base/uvm_port_base.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_imps.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_ports.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_exports.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_analysis_port.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_sqr_connections.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_pair.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_policies.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_in_order_comparator.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_random_stimulus.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_subscriber.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_monitor.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_driver.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_push_driver.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_scoreboard.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_agent.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_env.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_test.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/comps/uvm_comps.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequence_item.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequencer_base.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequencer_param_base.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequencer.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_push_sequencer.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequence_base.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequence.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequence_library.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_sequence_builtin.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/seq/uvm_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_time.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_item.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_adapter.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_predictor.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_sequence.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_cbs.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_backdoor.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_field.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_vreg_field.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_indirect.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_fifo.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_file.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_mem_mam.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_vreg.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_mem.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_map.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_block.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/snps_uvm_reg_bank.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/vcs_uvm_alt.sv'.
+Back to file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing design file 'defines.sv'
+Parsing design file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_frames.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_seqs.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_tx_driver.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_tx_monitor.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_tx_sequencer.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_rx_monitor.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_rx_agent.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_tx_agent.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_env.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_pkg.sv'.
+Parsing design file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_if.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../../Peripherals/Wishbone_x_UART/uart/sv/uart_if.sv'.
+Parsing design file '../wishbone_bfm/sv/wishbone_pkg.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_transaction.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_sequences.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_driver.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_monitor.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_sequencer.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_slave_seqs.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_slave_driver.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_slave_sequencer.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_slave_agent.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_agent.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing included file '../wishbone_bfm/sv/wishbone_env.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_pkg.sv'.
+Parsing design file '../wishbone_bfm/sv/wishbone_if.sv'
+Parsing included file 'defines.sv'.
+Back to file '../wishbone_bfm/sv/wishbone_if.sv'.
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../wishbone_bfm/sv/wishbone_if.sv'.
+
+Error-[IND] Identifier not declared
+../wishbone_bfm/sv/wishbone_if.sv, 111
+  Identifier 'addr' has not been declared yet. If this error is not expected, 
+  please check if you have set `default_nettype to none.
+  
+
+Parsing design file '../clock_and_reset/sv/clock_and_reset_pkg.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_config.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_sequence_item.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_sequencer.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_driver.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_agent.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_env.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_seq.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing included file '../clock_and_reset/sv/clock_and_reset_count_clocks_seq.sv'.
+Back to file '../clock_and_reset/sv/clock_and_reset_pkg.sv'.
+Parsing design file '../clock_and_reset/sv/clock_and_reset_if.sv'
+Parsing design file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_module_pkg.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_module_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/wb_x_uart_ref_model.sv'.
+
+Warning-[SV-IIS] Illegal import statement.
+../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/wb_x_uart_ref_model.sv, 3
+uart_module_pkg, "wb_x_uart_ref_model"
+  There is an import statement directly within the class wb_x_uart_ref_model. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[SV-IIS] Illegal import statement.
+../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/wb_x_uart_ref_model.sv, 4
+uart_module_pkg, "wb_x_uart_ref_model"
+  There is an import statement directly within the class wb_x_uart_ref_model. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+Back to file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_module_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_scoreboard.sv'.
+
+Warning-[SV-IIS] Illegal import statement.
+../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_scoreboard.sv, 2
+uart_module_pkg, "uart_scoreboard"
+  There is an import statement directly within the class uart_scoreboard. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[SV-IIS] Illegal import statement.
+../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_scoreboard.sv, 3
+uart_module_pkg, "uart_scoreboard"
+  There is an import statement directly within the class uart_scoreboard. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+Back to file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_module_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_module.sv'.
+Back to file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/uart_module_pkg.sv'.
+Parsing design file '../soc_module/sv/soc_module_pkg.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../soc_module/sv/soc_module_pkg.sv'.
+Parsing included file '../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/wb_x_uart_ref_model.sv'.
+
+Warning-[SV-IIS] Illegal import statement.
+../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/wb_x_uart_ref_model.sv, 3
+soc_module_pkg, "wb_x_uart_ref_model"
+  There is an import statement directly within the class wb_x_uart_ref_model. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[SV-IIS] Illegal import statement.
+../../Peripherals/Wishbone_x_UART/wb_x_uart_module/sv/wb_x_uart_ref_model.sv, 4
+soc_module_pkg, "wb_x_uart_ref_model"
+  There is an import statement directly within the class wb_x_uart_ref_model. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+Back to file '../soc_module/sv/soc_module_pkg.sv'.
+Parsing included file '../soc_module/sv/wb_interconnect_ref_model.sv'.
+
+Warning-[SV-IIS] Illegal import statement.
+../soc_module/sv/wb_interconnect_ref_model.sv, 3
+soc_module_pkg, "wb_interconnect_ref_model"
+  There is an import statement directly within the class 
+  wb_interconnect_ref_model. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[SV-IIS] Illegal import statement.
+../soc_module/sv/wb_interconnect_ref_model.sv, 4
+soc_module_pkg, "wb_interconnect_ref_model"
+  There is an import statement directly within the class 
+  wb_interconnect_ref_model. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[SV-IIS] Illegal import statement.
+../soc_module/sv/wb_interconnect_ref_model.sv, 5
+soc_module_pkg, "wb_interconnect_ref_model"
+  There is an import statement directly within the class 
+  wb_interconnect_ref_model. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[PII] Package importing itself
+../soc_module/sv/wb_interconnect_ref_model.sv, 5
+  Package importing itself has no effect. Package 'soc_module_pkg' is 
+  importing itself.
+  Package is defined at "../soc_module/sv/soc_module_pkg.sv", 1
+  Ignoring this import statement and continuing.
+
+Back to file '../soc_module/sv/soc_module_pkg.sv'.
+Parsing included file '../soc_module/sv/soc_scoreboard.sv'.
+
+Warning-[SV-IIS] Illegal import statement.
+../soc_module/sv/soc_scoreboard.sv, 2
+soc_module_pkg, "soc_scoreboard"
+  There is an import statement directly within the class soc_scoreboard. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[SV-IIS] Illegal import statement.
+../soc_module/sv/soc_scoreboard.sv, 3
+soc_module_pkg, "soc_scoreboard"
+  There is an import statement directly within the class soc_scoreboard. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+Back to file '../soc_module/sv/soc_module_pkg.sv'.
+Parsing included file '../soc_module/sv/soc_module.sv'.
+
+Warning-[SV-IIS] Illegal import statement.
+../soc_module/sv/soc_module.sv, 4
+soc_module_pkg, "soc_module"
+  There is an import statement directly within the class soc_module. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[SV-IIS] Illegal import statement.
+../soc_module/sv/soc_module.sv, 5
+soc_module_pkg, "soc_module"
+  There is an import statement directly within the class soc_module. 
+  Although this is allowed in this version of VCS, it is illegal according to 
+  the SystemVerilog LRM and can result in unexpected behavior.  It will not be
+  supported in future VCS releases.
+
+
+Warning-[PII] Package importing itself
+../soc_module/sv/soc_module.sv, 5
+  Package importing itself has no effect. Package 'soc_module_pkg' is 
+  importing itself.
+  Package is defined at "../soc_module/sv/soc_module_pkg.sv", 1
+  Ignoring this import statement and continuing.
+
+Back to file '../soc_module/sv/soc_module_pkg.sv'.
+Parsing design file 'clkgen.sv'
+Parsing design file '../../RivRtos/src/soc/core/lib.sv'
+Parsing design file '../../RivRtos/src/soc/debug/debug_pkg.sv'
+Parsing design file '../../RivRtos/src/soc/core/alignment_units.sv'
+Parsing design file '../../RivRtos/src/soc/core/alu_control.sv'
+Parsing design file '../../RivRtos/src/soc/core/alu.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/core/alu.sv, 1
+$unit
+  Package 'riscv_types' already wildcard imported. 
+  Ignoring riscv_types::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../RivRtos/src/soc/core/mul.sv'
+Parsing design file '../../RivRtos/src/soc/core/div.sv'
+Parsing design file '../../RivRtos/src/soc/core/branch_controller.sv'
+Parsing design file '../../RivRtos/src/soc/core/csr_file.sv'
+Parsing design file '../../RivRtos/src/soc/core/imm_gen.sv'
+Parsing design file '../../RivRtos/src/soc/core/main_control.sv'
+Parsing design file '../../RivRtos/src/soc/core/reg_file.sv'
+Parsing design file '../../RivRtos/src/soc/core/rom.sv'
+Parsing design file '../../RivRtos/src/soc/core/forwarding_unit.sv'
+Parsing design file '../../RivRtos/src/soc/core/hazard_controller.sv'
+Parsing design file '../../RivRtos/src/soc/core/pipeline_controller.sv'
+Parsing design file '../../RivRtos/src/soc/core/decompressor.sv'
+Parsing design file '../../RivRtos/src/soc/core/iadu.sv'
+Parsing design file '../../RivRtos/src/soc/core/atomic_extension.sv'
+Parsing design file '../../RivRtos/src/soc/core/exception_encoder.sv'
+Parsing design file '../../RivRtos/src/soc/core/data_path.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/core/data_path.sv, 1
+$unit
+  Package 'riscv_types' already wildcard imported. 
+  Ignoring riscv_types::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../RivRtos/src/soc/core/control_unit.sv'
+Parsing design file '../../RivRtos/src/soc/core/core_dbg_fsm.sv'
+Parsing design file '../../RivRtos/src/soc/core/rv32i_top.sv'
+Parsing design file '../../RivRtos/src/soc/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v'
+Parsing design file '../../RivRtos/src/soc/WishboneInterconnect/wb_intercon.sv'
+Parsing design file '../../RivRtos/src/soc/WishboneInterconnect/wishbone_controller.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/WishboneInterconnect/wishbone_controller.sv, 1
+$unit
+  Package 'riscv_types' already wildcard imported. 
+  Ignoring riscv_types::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../RivRtos/src/soc/uncore/gpio/gpio_defines.v'
+Parsing design file '../../RivRtos/src/soc/uncore/gpio/bidirec.sv'
+Parsing design file '../../RivRtos/src/soc/uncore/gpio/gpio_top.sv'
+Parsing design file '../../RivRtos/src/soc/uncore/spi/fifo4.v'
+Parsing design file '../../RivRtos/src/soc/uncore/spi/simple_spi_top.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_defines.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/raminfr.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_receiver.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_regs.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_rfifo.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_sync_flops.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_tfifo.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_top.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_transmitter.v'
+Parsing design file '../../RivRtos/src/soc/uncore/uart/uart_wb.v'
+Parsing design file '../../RivRtos/src/soc/uncore/clint/clint_wb.sv'
+Parsing design file '../../RivRtos/src/soc/uncore/clint/clint_top.sv'
+Parsing design file '../../RivRtos/src/soc/uncore/ptc/ptc_defines.v'
+Parsing design file '../../RivRtos/src/soc/uncore/ptc/ptc_top.v'
+Parsing included file '../../RivRtos/src/soc/uncore/ptc/ptc_defines.v'.
+Back to file '../../RivRtos/src/soc/uncore/ptc/ptc_top.v'.
+Parsing design file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_defines.v'
+Parsing design file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_bit_ctrl.v'
+Parsing included file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_defines.v'.
+Back to file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_bit_ctrl.v'.
+Parsing design file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_byte_ctrl.v'
+Parsing included file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_defines.v'.
+Back to file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_byte_ctrl.v'.
+Parsing design file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_top.v'
+Parsing included file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_defines.v'.
+Back to file '../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_top.v'.
+Parsing design file '../../RivRtos/src/soc/debug/dtm.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/debug/dtm.sv, 2
+$unit
+  Package 'debug_pkg' already wildcard imported. 
+  Ignoring debug_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../RivRtos/src/soc/debug/dm.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/debug/dm.sv, 2
+$unit
+  Package 'common_pkg' already wildcard imported. 
+  Ignoring common_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/debug/dm.sv, 3
+$unit
+  Package 'debug_pkg' already wildcard imported. 
+  Ignoring debug_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../RivRtos/src/soc/debug/debug_top.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/debug/debug_top.sv, 2
+$unit
+  Package 'common_pkg' already wildcard imported. 
+  Ignoring common_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../RivRtos/src/soc/debug/debug_top.sv, 3
+$unit
+  Package 'debug_pkg' already wildcard imported. 
+  Ignoring debug_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../RivRtos/src/soc/core/sram_wrapper.sv'
+Parsing design file '../../RivRtos/src/soc/sram/tsmc_32k_rtl.v'
+Parsing design file '../../RivRtos/src/soc/sram/tsmc_8k_rtl.v'
+Parsing design file '../../RivRtos/src/soc/core/data_mem.sv'
+Parsing design file '../../RivRtos/src/soc/rom/tsmc_rom_1k_rtl.v'
+Parsing design file '../../RivRtos/src/soc/io_mux.sv'
+Parsing design file '../../RivRtos/src/soc/rv32i_soc.sv'
+Parsing design file '../../RivRtos/src/pads/tpz018nv_270a/tpz018nv.v'
+Parsing design file '../../RivRtos/src/pads/top_rv32i_soc.sv'
+Parsing design file 'hw_top.sv'
+
+Warning-[IPDW] Identifier previously declared
+hw_top.sv, 29
+  Second declaration for identifier 'CLK_PAD' ignored
+  Identifier 'CLK_PAD' previously declared as logic. [hw_top.sv, 10]
+
+
+Warning-[IPDW] Identifier previously declared
+hw_top.sv, 30
+  Second declaration for identifier 'RESET_N_PAD' ignored
+  Identifier 'RESET_N_PAD' previously declared as logic. [hw_top.sv, 11]
+
+Parsing design file 'tb_top.sv'
+Parsing included file '/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh'.
+Back to file 'tb_top.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'tb_top.sv'.
+Parsing included file 'soc_mcsequencer.sv'.
+Back to file 'tb_top.sv'.
+Parsing included file 'soc_mcseqs_lib.sv'.
+Back to file 'tb_top.sv'.
+Parsing included file 'soc_tb.sv'.
+Back to file 'tb_top.sv'.
+Parsing included file 'soc_test_lib.sv'.
+
+Warning-[DCTL] Decimal constant too large
+soc_test_lib.sv, 39
+  Decimal constant '12000000000' is too large as a 32bit signed constant, it 
+  should be smaller than 2147483648.
+  VCS is using truncated value '-884901888' instead.
+  To make it an unsigned constant, please use sized constant format.
+
+Back to file 'tb_top.sv'.
+20 warnings
+1 error
+CPU time: .912 seconds to compile

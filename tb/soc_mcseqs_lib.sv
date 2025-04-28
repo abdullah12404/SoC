@@ -1,4 +1,4 @@
-class wishbone_mcseqs_lib extends uvm_sequence;
+class soc_mcseqs_lib extends uvm_sequence;
 
     //Handles of wishbone sequences
     UART_config_BD_9600_CL_8_PE_0 wb_BD_9600_CL_8_PE_0_Stop_0;
@@ -45,11 +45,11 @@ class wishbone_mcseqs_lib extends uvm_sequence;
     frame_BD_9600_parity_1_Even_1_P_Type_BAD uart_frame_9600_p_1_BAD;                                                                                                      
 
 
-    `uvm_object_utils(wishbone_mcseqs_lib)
-    `uvm_declare_p_sequencer(wishbone_mcsequencer)
+    `uvm_object_utils(soc_mcseqs_lib)
+    `uvm_declare_p_sequencer(soc_mcsequencer)
 
     //Class constructor
-    function new(string name = "wishbone_mcseqs_lib");
+    function new(string name = "soc_mcseqs_lib");
         super.new(name);
     endfunction : new
 
@@ -84,11 +84,11 @@ class wishbone_mcseqs_lib extends uvm_sequence;
     endtask : post_body
 
 
-endclass : wishbone_mcseqs_lib
+endclass : soc_mcseqs_lib
 
 
 //Sequence to test transmitted data = data in transmit FIFO
-class Data_Transmitted_equals_data_in_FIFO extends wishbone_mcseqs_lib;
+class Data_Transmitted_equals_data_in_FIFO extends soc_mcseqs_lib;
     
     //Object macro
     `uvm_object_utils(Data_Transmitted_equals_data_in_FIFO)
@@ -111,7 +111,7 @@ class Data_Transmitted_equals_data_in_FIFO extends wishbone_mcseqs_lib;
 endclass : Data_Transmitted_equals_data_in_FIFO
 
 //Sequence for checking the received data
-class Data_Received_equals_Data_in_FIFO extends wishbone_mcseqs_lib;
+class Data_Received_equals_Data_in_FIFO extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Data_Received_equals_Data_in_FIFO)
@@ -134,7 +134,7 @@ endclass : Data_Received_equals_Data_in_FIFO
 
 //Transmission at baud rate = 4800, parity enable = 0
 //Sequence to test transmitted data = data in transmit FIFO
-class Data_Transmitted_equals_data_in_FIFO_BD_4800 extends wishbone_mcseqs_lib;
+class Data_Transmitted_equals_data_in_FIFO_BD_4800 extends soc_mcseqs_lib;
     
     //Object macro
     `uvm_object_utils(Data_Transmitted_equals_data_in_FIFO_BD_4800)
@@ -156,7 +156,7 @@ endclass : Data_Transmitted_equals_data_in_FIFO_BD_4800
 
 //Transmission at baud rate = 115200, parity enable = 0
 //Sequence to test transmitted data = data in transmit FIFO
-class Data_Transmitted_equals_data_in_FIFO_BD_115200 extends wishbone_mcseqs_lib;
+class Data_Transmitted_equals_data_in_FIFO_BD_115200 extends soc_mcseqs_lib;
     
     //Object macro
     `uvm_object_utils(Data_Transmitted_equals_data_in_FIFO_BD_115200)
@@ -178,7 +178,7 @@ class Data_Transmitted_equals_data_in_FIFO_BD_115200 extends wishbone_mcseqs_lib
 endclass : Data_Transmitted_equals_data_in_FIFO_BD_115200
 
 //Sequence for checking the received data at baud rate = 4800
-class Data_Received_equals_Data_in_FIFO_BD_4800 extends wishbone_mcseqs_lib;
+class Data_Received_equals_Data_in_FIFO_BD_4800 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Data_Received_equals_Data_in_FIFO_BD_4800)
@@ -200,7 +200,7 @@ class Data_Received_equals_Data_in_FIFO_BD_4800 extends wishbone_mcseqs_lib;
 endclass : Data_Received_equals_Data_in_FIFO_BD_4800
 
 //Sequence for checking the received data at baud rate = 115200
-class Data_Received_equals_Data_in_FIFO_BD_115200 extends wishbone_mcseqs_lib;
+class Data_Received_equals_Data_in_FIFO_BD_115200 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Data_Received_equals_Data_in_FIFO_BD_115200)
@@ -222,7 +222,7 @@ class Data_Received_equals_Data_in_FIFO_BD_115200 extends wishbone_mcseqs_lib;
 endclass : Data_Received_equals_Data_in_FIFO_BD_115200
 
 //Test to check the parity bit by transmitting the wrong parity via transmit UVC of UART with baud rate = 115200
-class BAD_PARITY_BD_115200_EVEN_1 extends wishbone_mcseqs_lib;
+class BAD_PARITY_BD_115200_EVEN_1 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(BAD_PARITY_BD_115200_EVEN_1)
@@ -247,7 +247,7 @@ class BAD_PARITY_BD_115200_EVEN_1 extends wishbone_mcseqs_lib;
 endclass : BAD_PARITY_BD_115200_EVEN_1
 
 //Test to check the parity bit by transmitting the wrong parity via transmit UVC of UART with baud rate = 4800
-class BAD_PARITY_BD_4800_EVEN_1 extends wishbone_mcseqs_lib;
+class BAD_PARITY_BD_4800_EVEN_1 extends soc_mcseqs_lib;
 
 
     //Object macro
@@ -273,7 +273,7 @@ class BAD_PARITY_BD_4800_EVEN_1 extends wishbone_mcseqs_lib;
 endclass : BAD_PARITY_BD_4800_EVEN_1
 
 //Sequence to test the framing error
-class Framing_Error_BD_115200_Stop_0 extends wishbone_mcseqs_lib;
+class Framing_Error_BD_115200_Stop_0 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Framing_Error_BD_115200_Stop_0)
@@ -298,7 +298,7 @@ class Framing_Error_BD_115200_Stop_0 extends wishbone_mcseqs_lib;
 endclass : Framing_Error_BD_115200_Stop_0
 
 //Sequence for checking the reset on receiver FIFO at baud rate = 115200
-class Reset_Receiver_FIFO_BD_115200 extends wishbone_mcseqs_lib;
+class Reset_Receiver_FIFO_BD_115200 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Reset_Receiver_FIFO_BD_115200)
@@ -322,7 +322,7 @@ class Reset_Receiver_FIFO_BD_115200 extends wishbone_mcseqs_lib;
 endclass : Reset_Receiver_FIFO_BD_115200
 
 //Sequence to test the reset's effect (FCR[1]) on Rx FIFO that contains data
-class Reset_Rx_FIFO_BD_115200 extends wishbone_mcseqs_lib;
+class Reset_Rx_FIFO_BD_115200 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Reset_Rx_FIFO_BD_115200)
@@ -351,7 +351,7 @@ class Reset_Rx_FIFO_BD_115200 extends wishbone_mcseqs_lib;
 endclass : Reset_Rx_FIFO_BD_115200
 
 //Sequence to test the reset's effect (FCR[2]) on THR FIFO that contains data
-class Reset_THR_FIFO_BD_115200 extends wishbone_mcseqs_lib;
+class Reset_THR_FIFO_BD_115200 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Reset_THR_FIFO_BD_115200)
@@ -376,7 +376,7 @@ class Reset_THR_FIFO_BD_115200 extends wishbone_mcseqs_lib;
 endclass : Reset_THR_FIFO_BD_115200
 
 //Sequence to transmit the data with character length = 5, Baud rate = 9600 and Parity Enable = 0
-class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_5 extends wishbone_mcseqs_lib;
+class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_5 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_5)
@@ -398,7 +398,7 @@ class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_5 extends wishbone_mcse
 endclass : Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_5
 
 //Sequence to transmit the data with character length = 6, Baud rate = 9600 and Parity Enable = 0
-class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_6 extends wishbone_mcseqs_lib;
+class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_6 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_6)
@@ -420,7 +420,7 @@ class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_6 extends wishbone_mcse
 endclass : Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_6
 
 //Sequence to transmit the data with character length = 7, Baud rate = 9600 and Parity Enable = 0
-class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_7 extends wishbone_mcseqs_lib;
+class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_7 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_7)
@@ -442,7 +442,7 @@ class Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_7 extends wishbone_mcse
 endclass : Data_Received_equals_Data_in_FIFO_BD_9600_Char_Len_7
 
 //Sequence to test the receive data available interrupt at baud rate = 9600
-class Receive_Data_Available_Interrupt_BD_9600 extends wishbone_mcseqs_lib;
+class Receive_Data_Available_Interrupt_BD_9600 extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Receive_Data_Available_Interrupt_BD_9600)
@@ -468,7 +468,7 @@ class Receive_Data_Available_Interrupt_BD_9600 extends wishbone_mcseqs_lib;
 endclass : Receive_Data_Available_Interrupt_BD_9600
 
 //Sequence to test the THR empty interrupt status
-class THR_Empty_Interrupt extends wishbone_mcseqs_lib;
+class THR_Empty_Interrupt extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(THR_Empty_Interrupt)
@@ -492,7 +492,7 @@ class THR_Empty_Interrupt extends wishbone_mcseqs_lib;
 endclass : THR_Empty_Interrupt
 
 //Sequence to verify the receiver line status interrupt
-class Receiver_Line_Status_Interrupt extends wishbone_mcseqs_lib;
+class Receiver_Line_Status_Interrupt extends soc_mcseqs_lib;
 
     //Object macro
     `uvm_object_utils(Receiver_Line_Status_Interrupt)

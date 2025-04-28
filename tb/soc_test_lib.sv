@@ -1,7 +1,7 @@
 class base_test extends uvm_test;
 
     //Wishbone testbench
-    wishbone_tb  m_wb_tb;
+    soc_tb  m_soc_tb;
 
     `uvm_component_utils(base_test)
 
@@ -18,13 +18,13 @@ class base_test extends uvm_test;
         // obj.set_drain_time(this, 12000000000/9600);
         // uvm_objection.set_drain_time(this, 12000000000/9600);
         //Default sequence of wishbone master sequencer
-        // uvm_config_wrapper::set(this, "m_wb_tb.m_wb_env.m_wb_agent.m_wb_sequencer.run_phase",
+        // uvm_config_wrapper::set(this, "m_soc_tb.m_wb_env.m_wb_agent.m_wb_sequencer.run_phase",
         //                         "default_sequence", basic_seq::get_type());
         // //Default sequence for wishbone slave sequencer
-        // uvm_config_wrapper::set(this, "m_wb_tb.m_wb_env.m_wb_slave_agent.m_wb_slave_sequencer.run_phase",
+        // uvm_config_wrapper::set(this, "m_soc_tb.m_wb_env.m_wb_slave_agent.m_wb_slave_sequencer.run_phase",
         //                         "default_sequence", basic_slave_seq::get_type());
         //Creating the instance of wishbone testbench
-        m_wb_tb = wishbone_tb ::type_id::create("m_wb_tb", this);
+        m_soc_tb = soc_tb ::type_id::create("m_soc_tb", this);
         `uvm_info(get_type_name(), "Inside build phase of base_test (test library class)", UVM_HIGH)
     endfunction : build_phase
 
@@ -58,10 +58,10 @@ class mcsequencer_simple_test extends base_test;
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
         //Default sequence of clock and reset sequencer
-        uvm_config_wrapper::set(this, "m_wb_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
                                 "default_sequence", clk10_rst5_seq::get_type());
-        uvm_config_wrapper::set(this, "m_wb_tb.mcsequencer.run_phase",
-                                "default_sequence", wishbone_mcseqs_lib::get_type());
+        uvm_config_wrapper::set(this, "m_soc_tb.mcsequencer.run_phase",
+                                "default_sequence", soc_mcseqs_lib::get_type());
                 
     endfunction: build_phase
 
@@ -83,9 +83,9 @@ class test_Data_Transmitted_equals_data_in_transmit_FIFO extends base_test;
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
         //Default sequence of clock and reset sequencer
-        uvm_config_wrapper::set(this, "m_wb_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
                                 "default_sequence", clk10_rst5_seq::get_type());
-        uvm_config_wrapper::set(this, "m_wb_tb.mcsequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.mcsequencer.run_phase",
                                 "default_sequence", Data_Transmitted_equals_data_in_FIFO::get_type());
                 
     endfunction: build_phase
@@ -107,9 +107,9 @@ class test_Data_Received_equals_data_in extends base_test;
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
         //Default sequence of clock and reset sequencer
-        uvm_config_wrapper::set(this, "m_wb_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
                                 "default_sequence", clk10_rst5_seq::get_type());
-        uvm_config_wrapper::set(this, "m_wb_tb.mcsequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.mcsequencer.run_phase",
                                 "default_sequence", Data_Received_equals_Data_in_FIFO::get_type());
                 
     endfunction: build_phase
@@ -132,9 +132,9 @@ class test_Data_Transmitted_equals_data_in_transmit_FIFO_BD_115200 extends base_
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
         //Default sequence of clock and reset sequencer
-        uvm_config_wrapper::set(this, "m_wb_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
                                 "default_sequence", clk10_rst5_seq::get_type());
-        uvm_config_wrapper::set(this, "m_wb_tb.mcsequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.mcsequencer.run_phase",
                                 "default_sequence", Data_Transmitted_equals_data_in_FIFO_BD_115200::get_type());
                 
     endfunction: build_phase
@@ -155,9 +155,9 @@ class test_Data_Received_equals_data_in_FIFO_BD_4800 extends base_test;
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
         //Default sequence of clock and reset sequencer
-        uvm_config_wrapper::set(this, "m_wb_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
                                 "default_sequence", clk10_rst5_seq::get_type());
-        uvm_config_wrapper::set(this, "m_wb_tb.mcsequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.mcsequencer.run_phase",
                                 "default_sequence", Data_Received_equals_Data_in_FIFO_BD_4800::get_type());
                 
     endfunction: build_phase
@@ -180,9 +180,9 @@ class test_BAD_PARITY_BD_115200_EVEN_1 extends base_test;
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
         //Default sequence of clock and reset sequencer
-        uvm_config_wrapper::set(this, "m_wb_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.m_clock_and_reset_env.agent.sequencer.run_phase",
                                 "default_sequence", clk10_rst5_seq::get_type());
-        uvm_config_wrapper::set(this, "m_wb_tb.mcsequencer.run_phase",
+        uvm_config_wrapper::set(this, "m_soc_tb.mcsequencer.run_phase",
                                 "default_sequence", BAD_PARITY_BD_115200_EVEN_1::get_type());
                 
     endfunction: build_phase

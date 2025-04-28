@@ -1,4 +1,4 @@
-class wishbone_tb  extends uvm_env;
+class soc_tb  extends uvm_env;
 
     //handle of wishbone env
     wishbone_env  m_wb_env;
@@ -8,14 +8,16 @@ class wishbone_tb  extends uvm_env;
     clock_and_reset_env m_clock_and_reset_env;
 
     //Virtual/Multichannel sequencer
-    wishbone_mcsequencer mcsequencer;
+    soc_mcsequencer mcsequencer;
 
-    //uart_module_uvc
-    uart_module m_uart_module;
+    //soc_module_uvc
+    soc_module m_soc_module;
 
-    `uvm_component_utils(wishbone_tb)
+
+
+    `uvm_component_utils(soc_tb)
     //Class constructor
-    function new(string name = "wishbone_tb", uvm_component parent = null);
+    function new(string name = "soc_tb", uvm_component parent = null);
         super.new(name, parent);
     endfunction
 
@@ -27,9 +29,9 @@ class wishbone_tb  extends uvm_env;
       m_uart_env = uart_env::type_id::create("m_uart_env", this);
       m_clock_and_reset_env = clock_and_reset_env::type_id::create("m_clock_and_reset_env", this);
       // virtual sequencer
-      mcsequencer = wishbone_mcsequencer::type_id::create("mcsequencer", this);
-      //UART Module UVC
-      m_uart_module = uart_module ::type_id::create("m_uart_module", this);
+      mcsequencer = soc_mcsequencer::type_id::create("mcsequencer", this);
+      //SoC Module UVC
+      m_soc_module = soc_module ::type_id::create("m_soc_module", this);
     endfunction : build_phase
 
     //Connect phase
@@ -40,12 +42,12 @@ class wishbone_tb  extends uvm_env;
       mcsequencer.m_uart_tx_sequencer = m_uart_env.m_uart_tx_agent.m_uart_tx_sequencer; 
 
       //Connecting the monitor and scoreboard
-      m_wb_env.m_wb_agent.m_wb_monitor.wb_analysis_port.connect(m_uart_module.m_uart_ref_model.wb_uart_analysis_imp_ref_model);
+      m_wb_env.m_wb_agent.m_wb_monitor.wb_analysis_port.connect(m_soc_module.m_wb_interconnect_ref_model.wb_bfm_analysis_imp);
 //      m_wb_env.m_wb_agent.m_wb_monitor.wb_analysis_port.connect(m_uart_module.uart_sbd.wb_uart_analysis_imp);
-      m_uart_env.m_uart_tx_agent.m_uart_tx_monitor.uart_tx_analysis_port.connect(m_uart_module.uart_sbd.uart_tx_analysis_imp);
-      m_uart_env.m_uart_rx_agent.m_uart_rx_monitor.uart_rx_analysis_port.connect(m_uart_module.uart_sbd.uart_rx_analysis_imp);
+      m_uart_env.m_uart_tx_agent.m_uart_tx_monitor.uart_tx_analysis_port.connect(m_soc_module.soc_sbd.uart_tx_analysis_imp);
+      m_uart_env.m_uart_rx_agent.m_uart_rx_monitor.uart_rx_analysis_port.connect(m_soc_module.soc_sbd.uart_rx_analysis_imp);
 	
 
     endfunction : connect_phase
 
-endclass : wishbone_tb
+endclass : soc_tb
