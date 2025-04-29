@@ -33,10 +33,10 @@ clkgen.sv
 -sverilog
 
 
-+define+PD_BUILD
+#+define+PD_BUILD
 #+define+BOOT
-#+define+VCS_SIM   
-#+define+USE_SRAM
++define+VCS_SIM   
++define+USE_SRAM
 #+define+tracer
 #+define+debug
 
@@ -112,15 +112,15 @@ clkgen.sv
 
 # sram 
 # verilog model for simulation
- ../../RivRtos/src/soc/core/sram_wrapper.sv
  ../../RivRtos/src/soc/sram/tsmc_32k_rtl.v
  ../../RivRtos/src/soc/sram/tsmc_8k_rtl.v
+ ../../RivRtos/src/soc/core/sram_wrapper.sv
 
 # rom
 
 # system verilog models for prototyping
- ../../RivRtos/src/soc/core/data_mem.sv
  ../../RivRtos/src/soc/rom/tsmc_rom_1k_rtl.v
+ ../../RivRtos/src/soc/core/data_mem.sv
 
 
 # rv32i soc top

@@ -116,8 +116,8 @@ module hw_top;
    assign wb_if.sel_i =  DUT.u_rv32i_soc.wb_m2s_io_sel;
    assign wb_if.we_i =  DUT.u_rv32i_soc.wb_m2s_io_we;
    assign wb_if.cyc_i =  DUT.u_rv32i_soc.wb_m2s_io_cyc;
-   assign wb_if.stb_i =  DUT.u_rv32i_soc.wb_m2s_io_stb;*/
-
+   assign wb_if.stb_i =  DUT.u_rv32i_soc.wb_m2s_io_stb;
+/*
     always@(*)
     begin    
 	force DUT.u_rv32i_soc.wb_m2s_io_adr = wb_if.adr_i;

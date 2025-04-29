@@ -2,4 +2,7 @@ tb/log.txt
 tb/simv.daidir
 tb/csrc
 *.vcd
+*.bin
+*.elf
+*.hex
 tb/simv

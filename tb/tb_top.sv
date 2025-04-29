@@ -32,7 +32,7 @@ end
 
 initial begin
 //`ifdef VCS_SIM
-            $readmemh("/home/abid/C-Experiments/main.hex", hw_top.DUT.u_rv32i_soc.inst_mem_inst.dmem);
+                $readmemh("/home/abid/C-Experiments/main.hex", hw_top.DUT.u_rv32i_soc.inst_mem_inst.tsmc_32k_inst.u0.mem_core_array);
   //  `endif     
 
 end
