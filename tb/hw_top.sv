@@ -111,6 +111,12 @@ module hw_top;
     assign wb_if.dat_o = DUT.u_rv32i_soc.wb_s2m_io_dat;
     assign wb_if.ack_o = DUT.u_rv32i_soc.wb_s2m_io_ack;
 
+   assign wb_if.adr_i =  DUT.u_rv32i_soc.wb_m2s_io_adr;
+   assign wb_if.dat_i =  DUT.u_rv32i_soc.wb_m2s_io_dat;
+   assign wb_if.sel_i =  DUT.u_rv32i_soc.wb_m2s_io_sel;
+   assign wb_if.we_i =  DUT.u_rv32i_soc.wb_m2s_io_we;
+   assign wb_if.cyc_i =  DUT.u_rv32i_soc.wb_m2s_io_cyc;
+   assign wb_if.stb_i =  DUT.u_rv32i_soc.wb_m2s_io_stb;*/
 
     always@(*)
     begin    
@@ -124,7 +130,7 @@ module hw_top;
 
 
     end
-
+*/
     assign UART_if.STx_O=O_UART_TX_PAD;	
     assign I_UART_RX_PAD = UART_if.SRx_I;	
 

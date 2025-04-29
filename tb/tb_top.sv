@@ -30,6 +30,12 @@ initial begin
   run_test("Data_Transmitted_equals_data_in_transmit_FIFO_BD_4800");
 end
 
+initial begin
+//`ifdef VCS_SIM
+            $readmemh("/home/abid/C-Experiments/main.hex", hw_top.DUT.u_rv32i_soc.inst_mem_inst.dmem);
+  //  `endif     
+
+end
 /* initial begin
    #100;
    $finish;

@@ -1,3 +1,4 @@
+`include "defines.sv"
 interface wishbone_if (input clock, reset);
 
   //Importing the UVM and Wishbone package
@@ -107,9 +108,11 @@ interface wishbone_if (input clock, reset);
         else if(we_i === 1'bz && stb_i == 0 && cyc_i == 0 && reset == 0)
           begin
             trans = IDLE;
-            data = 8'bzzzzzzzz;
+            addr_i = `UART_BASE_ADDRESS;
+	    data = 8'bzzzzzzzz;
           end
         Reset = reset;
+
       end
     b = 1;
   endtask : collect_data

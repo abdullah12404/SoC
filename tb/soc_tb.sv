@@ -32,10 +32,13 @@ class soc_tb  extends uvm_env;
       mcsequencer = soc_mcsequencer::type_id::create("mcsequencer", this);
       //SoC Module UVC
       m_soc_module = soc_module ::type_id::create("m_soc_module", this);
+
+
     endfunction : build_phase
 
     //Connect phase
     function void connect_phase(uvm_phase phase);
+	m_wb_env.m_wb_agent.is_active = UVM_PASSIVE;
       //Multichannel sequencer connections
       mcsequencer.m_wb_sequencer = m_wb_env.m_wb_agent.m_wb_sequencer;      //Wishbone master sequencer
       //mcsequencer.m_wb_slave_sequencer = m_wb_env.m_wb_slave_agent.m_wb_slave_sequencer;      //Wishbone slave sequencer

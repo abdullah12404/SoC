@@ -31,7 +31,7 @@ class wishbone_monitor extends uvm_monitor;
         vif.collect_data(m_wb_trans.adr_i, m_wb_trans.trans, m_wb_trans.inta_o, m_wb_trans.data, m_wb_trans.reset);
         end_tr(m_wb_trans);
 //        $display("[MONITOR]" );
-//	m_wb_trans.print();
+	m_wb_trans.print();
         wb_analysis_port.write(m_wb_trans);
       end
    endtask : run_phase
